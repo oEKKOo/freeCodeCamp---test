@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+
+</head>
+
+<body>
+    <h1 id="title">校园生活满意度调查</h1>
+    <p id="description">感谢你抽出时间填写这份问卷，你的反馈对我们非常重要</p>
+
+    <form id="survey-form">
+        <!-- 姓名 -->
+        <label id="name-label">姓名</label>
+        <input type="text" id="name" required placeholder="请输入你的姓名">
+
+        <!-- 邮箱 -->
+        <label id="email-label">电子邮箱</label>
+        <input type="email" id="email" required placeholder="请输入你的邮箱">
+
+        <!-- 数字 -->
+        <label id="number-label">年龄</label>
+        <input type="number" id="number" min="10" max="100" placeholder="请输入你的年龄">
+
+        <!-- 下拉菜单 -->
+        <label>你所在的年级</label>
+        <select id="dropdown">
+            <option value="freshman">大一</option>
+            <option value="sophomore">大二</option>
+            <option value="junior">大三</option>
+            <option value="senior">大四</option>
+        </select>
+
+        <!-- 单选按钮 -->
+        <label>你对校园环境满意吗？</label>
+        <input class="inline" type="radio" name="satisfaction" value="yes"> 满意
+        <br>
+        <input class="inline" type="radio" name="satisfaction" value="no"> 不满意
+
+        <!-- 复选框 -->
+        <label>你最常使用的校园设施（可多选）</label>
+        <input class="inline" type="checkbox" value="library"> 图书馆
+        <br>
+        <input class="inline" type="checkbox" value="gym"> 体育馆
+        <br>
+        <input class="inline" type="checkbox" value="canteen"> 食堂
+
+        <!-- 文本域 -->
+        <label>其他建议</label>
+        <textarea rows="5" placeholder="请写下你的建议..."></textarea>
+
+        <!-- 提交按钮 -->
+        <input type="submit" id="submit" value="提交问卷">
+    </form>
+</body>
+
+</html>

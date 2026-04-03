@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <!-- 加入简单样式，提升美观度（个人风格） -->
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tfoot td {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 图书目录表格 -->
+    <table>
+        <!-- 表头：1行4列 -->
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Publication Year</th>
+            </tr>
+        </thead>
+
+        <!-- 表体：6行数据（满足至少5行要求） -->
+        <tbody>
+            <tr>
+                <td>The Great Gatsby</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>Fiction</td>
+                <td>1925</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Dystopian</td>
+                <td>1949</td>
+            </tr>
+            <tr>
+                <td>To Kill a Mockingbird</td>
+                <td>Harper Lee</td>
+                <td>Classic</td>
+                <td>1960</td>
+            </tr>
+            <tr>
+                <td>Pride and Prejudice</td>
+                <td>Jane Austen</td>
+                <td>Romance</td>
+                <td>1813</td>
+            </tr>
+            <tr>
+                <td>The Hobbit</td>
+                <td>J.R.R. Tolkien</td>
+                <td>Fantasy</td>
+                <td>1937</td>
+            </tr>
+            <tr>
+                <td>Harry Potter</td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>1997</td>
+            </tr>
+        </tbody>
+
+        <!-- 表脚：1行，合并4列，显示总图书数 -->
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Books: 6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
