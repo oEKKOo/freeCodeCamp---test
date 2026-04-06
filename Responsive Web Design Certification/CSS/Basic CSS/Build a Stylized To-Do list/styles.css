@@ -1,0 +1,79 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 30px;
+    background: #f5f7fa;
+}
+
+.todo-list {
+    list-style: none;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.todo-list li {
+    background: white;
+    padding: 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.sub-item {
+    list-style: none;
+    margin-top: 8px;
+    padding-left: 25px;
+}
+
+
+a.sub-item-link {
+    text-decoration: none !important;
+    text-decoration: none;
+    color: red;
+}
+
+a.sub-item-link:link {
+    text-decoration: none !important;
+    color: red;
+}
+
+a.sub-item-link:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a.sub-item-link:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+a.sub-item-link:active {
+    color: darkred;
+    text-decoration: none;
+}
+
+a.sub-item-link:focus {
+    outline: 2px solid blue;
+    text-decoration: none;
+}
+
+.sub-item-link:hover {
+    color: #f97316;
+    text-decoration: none;
+}
+
+.sub-item-link:active {
+    color: #e11d48;
+    text-decoration: none;
+}
+
+.sub-item-link:focus {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+    text-decoration: none;
+}
