@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="applicationForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="position">Applied Position</label>
+                <select id="position" name="position" required>
+                    <option value="">Select a position</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="fullstack">Fullstack Developer</option>
+                    <option value="designer">UI/UX Designer</option>
+                </select>
+            </div>
+
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+                <div class="radio-option">
+                    <input type="radio" id="fulltime" name="availability" value="fulltime" required>
+                    <label for="fulltime">Full Time</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="parttime" name="availability" value="parttime">
+                    <label for="parttime">Part Time</option>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="remote" name="availability" value="remote">
+                    <label for="remote">Remote</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="message">Additional Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about yourself..."
+                    required></textarea>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+
+</html>
