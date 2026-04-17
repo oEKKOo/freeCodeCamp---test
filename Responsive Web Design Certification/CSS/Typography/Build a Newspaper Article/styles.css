@@ -1,0 +1,61 @@
+/* 1. 根元素 font-size: 24px */
+html {
+    font-size: 24px;
+}
+
+/* 报纸容器样式 */
+.newspaper {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* 报纸名称 */
+.name {
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+/* 日期 */
+.date {
+    margin: 0 0 15px 0;
+}
+
+/* 主标题 */
+.headline {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+/* 副标题 */
+.sub-headline {
+    font-weight: 100;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0 0 20px 0;
+}
+
+/* 作者 */
+.author {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+/* 正文段落 */
+.text {
+    text-indent: 20px;
+    line-height: 2em;
+    margin: 0 0 15px 0;
+}
+
+/* 首字母样式 */
+.text::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+}

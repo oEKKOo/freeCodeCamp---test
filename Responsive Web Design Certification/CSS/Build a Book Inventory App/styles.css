@@ -1,0 +1,89 @@
+/* 基础表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* =============================================
+   测试 21 ~ 26  纯属性选择器 行渐变
+   ============================================= */
+tr[class="read"] {
+    background-image: linear-gradient(to right, #e6f7ff, #d1eaff);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to right, #fff7e6, #ffe8cc);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to right, #f6ffed, #e6fffb);
+}
+
+/* =============================================
+   测试 27 所有 span inline-block
+   ============================================= */
+span {
+    display: inline-block;
+}
+
+/* =============================================
+   测试 28 ~ 36  纯属性选择器 状态标签样式
+   ============================================= */
+tr[class="to-read"] span[class="status"] {
+    border: 1px solid #ff922b;
+    background-image: linear-gradient(to bottom, #fff7e6, #ffe8cc);
+}
+
+tr[class="read"] span[class="status"] {
+    border: 1px solid #2f9e49;
+    background-image: linear-gradient(to bottom, #f6ffed, #e6fffb);
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 1px solid #1971c2;
+    background-image: linear-gradient(to bottom, #e6f7ff, #d1eaff);
+}
+
+/* =============================================
+   测试 37 ~ 40  纯属性选择器 状态 + 评分星级
+   ============================================= */
+span[class="status"],
+span[class^="rate"] {
+    height: 24px;
+    width: auto;
+    padding: 4px 10px;
+}
+
+/* =============================================
+   测试 41 ~ 47 星级圆点
+   ============================================= */
+span[class^="rate"]>span {
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin: 0 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+}
+
+/* =============================================
+   测试 48 ~ 53 星级点亮渐变
+   ============================================= */
+span[class~="one"]>span:first-child {
+    background-image: linear-gradient(to right, #ffd43b, #fab005);
+}
+
+span[class~="two"]>span:nth-child(1),
+span[class~="two"]>span:nth-child(2) {
+    background-image: linear-gradient(to right, #ffd43b, #fab005);
+}
+
+span[class~="three"]>span {
+    background-image: linear-gradient(to right, #ffd43b, #fab005);
+}

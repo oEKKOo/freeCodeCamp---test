@@ -1,0 +1,50 @@
+/* 页面基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+/* 主容器：满足所有测试要求 */
+#playing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 卡片样式 */
+.card {
+    /* 必须设置宽高 */
+    width: 120px;
+    height: 180px;
+    /* 弹性布局 */
+    display: flex;
+    justify-content: space-between;
+    /* 卡片样式 */
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+/* 左侧对齐 */
+.left {
+    align-self: flex-start;
+}
+
+/* 中间居中 + 垂直排列 */
+.middle {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+/* 右侧对齐 */
+.right {
+    align-self: flex-end;
+}

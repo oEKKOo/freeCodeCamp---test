@@ -1,0 +1,36 @@
+/* 主容器样式：完全满足测试要求 */
+#email {
+    width: 500px;
+    padding: 50px;
+    margin-top: 50px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#confidential,
+#top-secret {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border: 2px solid #d32f2f;
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#confidential {
+    transform: rotate(-10deg);
+}
+
+#top-secret {
+    transform: rotate(10deg);
+}
+
+.blurred {
+    filter: blur(3px);
+    color: #666;
+}

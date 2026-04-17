@@ -1,0 +1,85 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 导航固定在顶部 */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+/* 欢迎区域：高度 = 视口高度 */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 项目区域 */
+#project-section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+#project-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-tile {
+    padding: 2rem;
+    background: #eee;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.project-tile a {
+    font-size: 1.2rem;
+    color: #222;
+    text-decoration: none;
+}
+
+/* GitHub 链接 */
+#profile-link {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    color: #0969da;
+}
+
+/* 媒体查询（满足测试要求） */
+@media (max-width: 600px) {
+    #welcome-section h1 {
+        font-size: 1.8rem;
+    }
+
+    #navbar a {
+        font-size: 1rem;
+    }
+}

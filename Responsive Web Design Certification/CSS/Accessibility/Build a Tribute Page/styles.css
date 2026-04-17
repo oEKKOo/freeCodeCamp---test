@@ -1,0 +1,15 @@
+img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: center;
+    margin: 0 auto;
+}
