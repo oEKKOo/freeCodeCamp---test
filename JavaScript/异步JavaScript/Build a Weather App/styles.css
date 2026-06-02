@@ -1,0 +1,34 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+#city-select {
+    padding: 6px;
+    margin-right: 8px;
+}
+
+#get-weather-btn {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.weather-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#weather-icon {
+    width: 60px;
+}
+
+.weather-box div {
+    margin: 6px 0;
+}
