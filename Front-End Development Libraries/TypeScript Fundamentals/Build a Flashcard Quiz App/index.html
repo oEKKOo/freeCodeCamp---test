@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard Quiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <main class="app">
+        <h1>闪卡测验</h1>
+
+        <section class="card-section">
+            <div id="flashcard" class="flashcard">
+                <div class="card-face card-front">
+                    <p id="question-display">点击卡片查看答案</p>
+                </div>
+
+                <div class="card-face card-back">
+                    <p id="answer-display">答案会显示在这里</p>
+                </div>
+            </div>
+
+            <button id="delete-btn" type="button">删除当前卡片</button>
+        </section>
+
+        <form id="entry-form">
+            <h2>添加新闪卡</h2>
+
+            <label for="front-text">问题</label>
+            <textarea id="front-text" placeholder="请输入问题"></textarea>
+
+            <label for="back-text">答案</label>
+            <textarea id="back-text" placeholder="请输入答案"></textarea>
+
+            <button type="submit">添加闪卡</button>
+        </form>
+    </main>
+
+    <script type="module" src="./index.ts"></script>
+</body>
+
+</html>
