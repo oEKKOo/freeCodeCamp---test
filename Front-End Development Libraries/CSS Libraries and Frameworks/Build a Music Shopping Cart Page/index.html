@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shopping Cart Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6">
+    <!-- 外层购物车容器：移动端flex-col，大屏lg:flex-row -->
+    <div id="shopping-cart-container" class="flex flex-col lg:flex-row gap-8">
+        <!-- 商品容器 -->
+        <div id="products-container" class="flex flex-col gap-5">
+            <!-- 商品卡片1 -->
+            <div class="card border p-4 rounded-md">
+                <h2 class="text-xl">Vinyl Album - Pop Hits</h2>
+                <div class="quantity">Quantity: 2</div>
+                <div class="price">$29.99</div>
+                <button
+                    class="remove-button mt-3 bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Remove</button>
+            </div>
+            <!-- 商品卡片2 -->
+            <div class="card border p-4 rounded-md">
+                <h2 class="text-xl">Wireless Headphones</h2>
+                <div class="quantity">Quantity: 1</div>
+                <div class="price">$89.99</div>
+                <button
+                    class="remove-button mt-3 bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Remove</button>
+            </div>
+        </div>
+
+        <!-- 订单汇总容器：圆角+边框 -->
+        <div id="order-summary-container" class="rounded-lg border p-6 min-w-[280px] h-fit">
+            <h2 class="text-2xl mb-4">Order Summary</h2>
+            <div id="total" class="font-bold text-lg mb-2">Total:</div>
+            <div id="total-amount" class="mb-6">$149.97</div>
+            <a href="#" class="block text-center bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">Checkout</a>
+        </div>
+    </div>
+</body>
+
+</html>
